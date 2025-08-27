@@ -39,4 +39,4 @@ They can be extended later with CSS and JavaScript for styling and interactivity
 Santhosh Kumar Markonda
 Aspiring Java Developer | Web Development Enthusiast
 
-🔗 github.com/Santhoshmarkonda | https://www.linkedin.com/in/santhosh-kumar-markonda/
+🔗 https://github.com/Santhoshmarkonda | https://www.linkedin.com/in/santhosh-kumar-markonda/
