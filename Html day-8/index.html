@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bus Pass Application Form</title>
+</head>
+<body style="font-family: Arial, sans-serif; margin: 20px;">
+  <h1 style="text-align: center;">Bus Pass Application Form</h1>
+  <form style="max-width: 700px; margin: auto; padding: 20px; border: 1px solid #ccc; border-radius: 8px;">
+    <label for="name" style="display:block; margin-top:10px; font-weight:bold;">Full Name *</label>
+    <input type="text" id="name" name="name" required style="width:100%; padding:8px; margin-top:5px; border:1px solid #aaa; border-radius:4px;">
+
+    <div style="display:flex; gap:10px;">
+      <div style="flex:1;">
+        <label for="dob" style="display:block; margin-top:10px; font-weight:bold;">Date of Birth *</label>
+        <input type="date" id="dob" name="dob" required style="width:100%; padding:8px; margin-top:5px; border:1px solid #aaa; border-radius:4px;">
+      </div>
+      <div style="flex:1;">
+        <label for="gender" style="display:block; margin-top:10px; font-weight:bold;">Gender</label>
+        <select id="gender" name="gender" style="width:100%; padding:8px; margin-top:5px; border:1px solid #aaa; border-radius:4px;">
+          <option value="">Select</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+    </div>
+
+    <label for="email" style="display:block; margin-top:10px; font-weight:bold;">Email *</label>
+    <input type="email" id="email" name="email" required style="width:100%; padding:8px; margin-top:5px; border:1px solid #aaa; border-radius:4px;">
+
+    <label for="mobile" style="display:block; margin-top:10px; font-weight:bold;">Mobile Number *</label>
+    <input type="tel" id="mobile" name="mobile" maxlength="10" required style="width:100%; padding:8px; margin-top:5px; border:1px solid #aaa; border-radius:4px;">
+
+    <label for="idProof" style="display:block; margin-top:10px; font-weight:bold;">Govt. ID Number *</label>
+    <input type="text" id="idProof" name="idProof" required style="width:100%; padding:8px; margin-top:5px; border:1px solid #aaa; border-radius:4px;">
+
+    <label for="address" style="display:block; margin-top:10px; font-weight:bold;">Address *</label>
+    <textarea id="address" name="address" rows="3" required style="width:100%; padding:8px; margin-top:5px; border:1px solid #aaa; border-radius:4px;"></textarea>
+
+    <div style="display:flex; gap:10px;">
+      <div style="flex:1;">
+        <label for="city" style="display:block; margin-top:10px; font-weight:bold;">City *</label>
+        <input type="text" id="city" name="city" required style="width:100%; padding:8px; margin-top:5px; border:1px solid #aaa; border-radius:4px;">
+      </div>
+      <div style="flex:1;">
+        <label for="state" style="display:block; margin-top:10px; font-weight:bold;">State *</label>
+        <input type="text" id="state" name="state" required style="width:100%; padding:8px; margin-top:5px; border:1px solid #aaa; border-radius:4px;">
+      </div>
+      <div style="flex:1;">
+        <label for="pincode" style="display:block; margin-top:10px; font-weight:bold;">Pincode *</label>
+        <input type="text" id="pincode" name="pincode" maxlength="6" required style="width:100%; padding:8px; margin-top:5px; border:1px solid #aaa; border-radius:4px;">
+      </div>
+    </div>
+
+    <label for="category" style="display:block; margin-top:10px; font-weight:bold;">Category *</label>
+    <select id="category" name="category" required style="width:100%; padding:8px; margin-top:5px; border:1px solid #aaa; border-radius:4px;">
+      <option value="">Select</option>
+      <option value="fresh">Fresh</option>
+      <option value="renewal">Renewal</option>
+    </select>
+
+    <label for="passType" style="display:block; margin-top:10px; font-weight:bold;">Pass Type *</label>
+    <select id="passType" name="passType" required style="width:100%; padding:8px; margin-top:5px; border:1px solid #aaa; border-radius:4px;">
+      <option value="">Select</option>
+      <option value="general">General</option>
+      <option value="student">Student</option>
+      <option value="employee">Employee</option>
+    </select>
+
+    <label for="duration" style="display:block; margin-top:10px; font-weight:bold;">Duration *</label>
+    <select id="duration" name="duration" required style="width:100%; padding:8px; margin-top:5px; border:1px solid #aaa; border-radius:4px;">
+      <option value="">Select</option>
+      <option value="monthly">Monthly</option>
+      <option value="quarterly">Quarterly</option>
+    </select>
+
+    <div style="display:flex; gap:10px;">
+      <div style="flex:1;">
+        <label for="fromStop" style="display:block; margin-top:10px; font-weight:bold;">From Stop *</label>
+        <input type="text" id="fromStop" name="fromStop" required style="width:100%; padding:8px; margin-top:5px; border:1px solid #aaa; border-radius:4px;">
+      </div>
+      <div style="flex:1;">
+        <label for="toStop" style="display:block; margin-top:10px; font-weight:bold;">To Stop *</label>
+        <input type="text" id="toStop" name="toStop" required style="width:100%; padding:8px; margin-top:5px; border:1px solid #aaa; border-radius:4px;">
+      </div>
+    </div>
+
+    <label for="startDate" style="display:block; margin-top:10px; font-weight:bold;">Start Date *</label>
+    <input type="date" id="startDate" name="startDate" required style="width:100%; padding:8px; margin-top:5px; border:1px solid #aaa; border-radius:4px;">
+
+    <label for="photo" style="display:block; margin-top:10px; font-weight:bold;">Upload Photo *</label>
+    <input type="file" id="photo" name="photo" accept="image/*" required style="width:100%; margin-top:5px;">
+
+    <label style="display:block; margin-top:10px;">
+      <input type="checkbox" required> I hereby declare that the information provided is true.
+    </label>
+
+    <button type="submit" style="margin-top:15px; padding:10px 15px; border:none; border-radius:5px; cursor:pointer; background:#007bff; color:#fff; font-weight:bold;">Submit Application</button>
+  </form>
+</body>
+</html>
